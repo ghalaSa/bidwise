@@ -1,0 +1,45 @@
+<svg width="100%" height="100%" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Left Card Gradient: Purple to Deep Violet -->
+    <linearGradient id="leftCardGrad" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </linearGradient>
+    
+    <!-- Right Card Gradient: Vibrant Blue to Royal Blue -->
+    <linearGradient id="rightCardGrad" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <!-- Curve Gradient: Purple to Blue/Indigo -->
+    <linearGradient id="curveGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Card (Purple) -->
+  <g transform="rotate(-12 44 50)">
+    <rect x="27" y="26" width="34" height="48" rx="6" fill="url(#leftCardGrad)" />
+    <!-- Three White Lines representing text -->
+    <rect x="33" y="36" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+    <rect x="33" y="45" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+    <rect x="33" y="54" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Right Card (Blue) -->
+  <g transform="rotate(6 72 53)">
+    <rect x="55" y="29" width="34" height="48" rx="6" fill="url(#rightCardGrad)" stroke="#FFFFFF" stroke-width="2.5" />
+    <!-- Three White Lines representing text -->
+    <rect x="61" y="39" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+    <rect x="61" y="48" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+    <rect x="61" y="57" width="22" height="3" rx="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Smile/Curved Line Underneath -->
+  <path d="M 48 82 Q 65 96 82 82" stroke="url(#curveGrad)" stroke-width="5" stroke-linecap="round" fill="none" />
+  
+  <!-- Circle Dot at the right tip -->
+  <circle cx="82" cy="82" r="4.5" fill="#3B82F6" />
+</svg>
