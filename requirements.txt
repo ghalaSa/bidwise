@@ -1,0 +1,9 @@
+flask
+gunicorn
+openai
+pdfplumber
+faiss-cpu
+pandas
+numpy
+scikit-learn
+plotly

@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background glow and gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+    </radialGradient>
+    
+    <linearGradient id="bluePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2" />
+    </linearGradient>
+    
+    <!-- Shadow filters for elements -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.2" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background radial glow -->
+  <circle cx="400" cy="300" r="350" fill="url(#bgGlow)" />
+
+  <!-- Grid lines representing a structured analytical system -->
+  <g stroke="#E2E8F0" stroke-opacity="0.5" stroke-width="1">
+    <path d="M 100,50 L 700,50 M 100,150 L 700,150 M 100,250 L 700,250 M 100,350 L 700,350 M 100,450 L 700,450 M 100,550 L 700,550" />
+    <path d="M 150,50 L 150,550 M 250,50 L 250,550 M 350,50 L 350,550 M 450,50 L 450,550 M 550,50 L 550,550 M 650,50 L 650,550" />
+  </g>
+
+  <!-- Connecting AI node network lines -->
+  <path d="M 220,180 Q 350,120 480,220 T 600,160" fill="none" stroke="url(#bluePurple)" stroke-width="3" stroke-dasharray="8,8" />
+  <path d="M 180,380 Q 360,450 520,320 T 640,420" fill="none" stroke="url(#bluePurple)" stroke-width="2" opacity="0.6" />
+
+  <!-- Node intersections (AI Neurons) -->
+  <circle cx="220" cy="180" r="8" fill="#2563EB" filter="url(#glow)" />
+  <circle cx="480" cy="220" r="10" fill="#7C3AED" filter="url(#glow)" />
+  <circle cx="600" cy="160" r="6" fill="#3B82F6" />
+  <circle cx="360" cy="423" r="5" fill="#8B5CF6" />
+  <circle cx="520" cy="320" r="9" fill="#2563EB" filter="url(#glow)" />
+
+  <!-- Document 1: RFP (Left) -->
+  <g transform="translate(140, 200)" filter="url(#cardShadow)">
+    <!-- Document Card -->
+    <rect width="180" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect width="180" height="240" rx="16" fill="#2563EB" fill-opacity="0.02" />
+    
+    <!-- Top Bar / Header of Document -->
+    <rect x="20" y="20" width="60" height="12" rx="4" fill="url(#bluePurple)" />
+    <circle cx="150" cy="26" r="6" fill="#2563EB" fill-opacity="0.2" />
+    <circle cx="150" cy="26" r="3" fill="#2563EB" />
+    
+    <!-- Document Lines (RFP structure) -->
+    <rect x="20" y="55" width="140" height="6" rx="3" fill="#94A3B8" opacity="0.4" />
+    <rect x="20" y="75" width="140" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="95" width="100" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="115" width="140" height="6" rx="3" fill="#E2E8F0" />
+    
+    <!-- Visual Target/Requirement Highlight -->
+    <rect x="16" y="138" width="148" height="36" rx="8" fill="#F8FAFC" stroke="#3B82F6" stroke-width="1.5" />
+    <rect x="28" y="148" width="100" height="6" rx="3" fill="#2563EB" />
+    <rect x="28" y="160" width="60" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    <circle cx="144" cy="156" r="6" fill="#10B981" />
+    <path d="M 141,156 L 143,158 L 147,154" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <rect x="20" y="195" width="120" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="215" width="80" height="6" rx="3" fill="#E2E8F0" />
+  </g>
+
+  <!-- Document 2: Technical Proposal (Right) -->
+  <g transform="translate(480, 240)" filter="url(#cardShadow)">
+    <!-- Document Card -->
+    <rect width="180" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect width="180" height="240" rx="16" fill="#7C3AED" fill-opacity="0.02" />
+    
+    <!-- Top Bar / Header of Document -->
+    <rect x="20" y="20" width="60" height="12" rx="4" fill="url(#bluePurple)" />
+    <circle cx="150" cy="26" r="6" fill="#7C3AED" fill-opacity="0.2" />
+    <circle cx="150" cy="26" r="3" fill="#7C3AED" />
+    
+    <!-- Document Lines -->
+    <rect x="20" y="55" width="140" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="75" width="120" height="6" rx="3" fill="#E2E8F0" />
+    
+    <!-- Visual Matches Highlight -->
+    <rect x="16" y="98" width="148" height="50" rx="8" fill="#FDF4FF" stroke="#C084FC" stroke-width="1.5" />
+    <rect x="28" y="110" width="80" height="6" rx="3" fill="#7C3AED" />
+    <rect x="28" y="122" width="110" height="6" rx="3" fill="#7C3AED" opacity="0.6" />
+    <rect x="28" y="134" width="50" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    
+    <!-- Sparkles/AI indicator on proposal match -->
+    <path d="M 140,110 L 142,114 L 146,115 L 142,116 L 140,120 L 138,116 L 134,115 L 138,114 Z" fill="#F59E0B" />
+
+    <rect x="20" y="170" width="140" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="190" width="140" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="20" y="210" width="90" height="6" rx="3" fill="#E2E8F0" />
+  </g>
+
+  <!-- Center Floating UI element: Match & ML Predictor Dashboard -->
+  <g transform="translate(280, 100)" filter="url(#cardShadow)">
+    <rect width="240" height="160" rx="20" fill="#0F172A" />
+    
+    <!-- Dashboard header -->
+    <text x="24" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">Win Probability</text>
+    <rect x="180" y="18" width="40" height="20" rx="10" fill="#1E293B" />
+    <circle cx="190" cy="28" r="4" fill="#10B981" />
+    <text x="200" y="32" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#10B981">LIVE</text>
+
+    <!-- Match stats & circle indicator -->
+    <g transform="translate(24, 55)">
+      <!-- Radial progress circle -->
+      <circle cx="45" cy="45" r="40" fill="none" stroke="#1E293B" stroke-width="8" />
+      <circle cx="45" cy="45" r="40" fill="none" stroke="url(#bluePurple)" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="38" stroke-linecap="round" transform="rotate(-90 45 45)" filter="url(#glow)" />
+      
+      <!-- Big match text inside circle -->
+      <text x="45" y="50" font-family="'Outfit', sans-serif" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle">85%</text>
+      
+      <!-- Metrics text beside circle -->
+      <g transform="translate(100, 10)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Compliance Score</text>
+        <text x="0" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#F8FAFC">92.4%</text>
+        
+        <text x="0" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Risks Flagged</text>
+        <text x="0" y="66" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#EF4444">Low (2)</text>
+      </g>
+    </g>
+
+    <!-- Bottom tiny sparkline -->
+    <path d="M 24,140 L 50,132 L 80,145 L 110,135 L 140,142 L 170,128 L 200,135 L 216,120" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="216" cy="120" r="4" fill="#10B981" filter="url(#glow)" />
+  </g>
+
+  <!-- AI Connection beams (connecting documents to center) -->
+  <!-- Left to Center connection -->
+  <path d="M 320,280 L 400,260" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.8" />
+  <!-- Center to Right connection -->
+  <path d="M 500,220 L 520,240" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.8" />
+
+  <!-- Compliance Tags floating -->
+  <g transform="translate(120, 480)" filter="url(#cardShadow)">
+    <rect width="150" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="25" cy="20" r="8" fill="#D1FAE5" />
+    <path d="M 22,20 L 24,22 L 28,18" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="44" y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#1E293B">98 Matches Found</text>
+  </g>
+
+  <g transform="translate(530, 140)" filter="url(#cardShadow)">
+    <rect width="150" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="25" cy="20" r="8" fill="#FEE2E2" />
+    <path d="M 21,20 L 29,20" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round" />
+    <text x="44" y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#1E293B">0 Missing Reqs</text>
+  </g>
+
+  <!-- Decorative floating sparkles and spheres -->
+  <g transform="translate(380, 400)">
+    <circle cx="0" cy="0" r="12" fill="url(#bluePurple)" opacity="0.1" />
+    <circle cx="0" cy="0" r="6" fill="#7C3AED" />
+  </g>
+  <g transform="translate(450, 480)">
+    <circle cx="0" cy="0" r="24" fill="url(#bluePurple)" opacity="0.05" />
+    <circle cx="0" cy="0" r="8" fill="#2563EB" opacity="0.3" />
+  </g>
+  <g transform="translate(680, 380)">
+    <circle cx="0" cy="0" r="16" fill="url(#bluePurple)" opacity="0.1" />
+    <circle cx="0" cy="0" r="4" fill="#3B82F6" />
+  </g>
+</svg>
