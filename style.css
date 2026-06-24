@@ -2062,56 +2062,67 @@ a {
     width: 18px;
     height: 18px;
   }
+  html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+.app-container,
+.main-content,
+.page-section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  .sidebar {
-    width: 100%;
-    position: relative;
-    height: auto;
-  }
+.welcome-hero {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
+}
 
-  .main-content,
-  .dashboard,
-  .content {
-    margin-left: 0 !important;
-    width: 100% !important;
-    padding: 16px !important;
-  }
+.welcome-info {
+  width: 100% !important;
+  text-align: center !important;
+  align-items: center !important;
+  order: 2;
+}
 
-  .upload-grid,
-  .cards-grid,
-  .results-grid,
-  .metrics-grid {
-    grid-template-columns: 1fr !important;
-  }
+.welcome-illustration {
+  order: 1;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
 
-  .upload-card,
-  .metric-card,
-  .result-card,
-  .chart-card {
-    width: 100% !important;
-  }
+.welcome-illustration img {
+  width: 100% !important;
+  max-width: 340px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
 
-  h1 {
-    font-size: 28px !important;
-  }
+.welcome-desc {
+  max-width: 100% !important;
+  font-size: 1rem !important;
+}
 
-  h2 {
-    font-size: 22px !important;
-  }
+.welcome-slogan::after {
+  display: none !important;
+}
 
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+.cta-btn {
+  width: 100% !important;
+  max-width: 300px !important;
+  margin: auto !important;
+  justify-content: center !important;
+}
 
-  button {
-    width: 100%;
-  }
+.features-grid {
+  grid-template-columns: 1fr !important;
 }
